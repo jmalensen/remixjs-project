@@ -1,0 +1,18 @@
+{
+	"loading": "Laddning",
+    "title": "Vänligen ange och kontrollera dina uppgifter",
+    "customer_number": "Kundnummer *",
+    "fullname": "Fullt namn *",
+    "have_you_set_budget": "Har du satt upp en budget för idag?",
+    "yes": "Ja",
+    "no": "Nej",
+    "for_what_purpose_you_visit_casino": "I vilket syfte besöker du kasinot?",
+    "do_you_know_our_tips": "Känner du till våra fyra goda råd?",
+    "continue": "Fortsätt",
+
+    "invalid_customer_number": "Invalid kundnummer",
+    "invalid_fullname": "Namnet ska bestå av minst 12 tecken",
+
+    "thank_you": "Tack",
+    "back_home": "Tillbaka hem"
+}

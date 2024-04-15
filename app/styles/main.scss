@@ -1,0 +1,205 @@
+$green:#aa934d;
+$bgcolor:#f8f9fa;
+$white:#FFFFFF;
+$greyLight:#eee;
+$grey:#ccc;
+
+body {
+  background-color: $bgcolor;
+  margin:0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rgdq-top-page{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.rgdq-logo{
+  width: 210px;
+  height: auto;
+}
+
+.rgdq-lang-select {
+  display: grid;
+  justify-content: end;
+  align-items: center;
+
+  .rgdq-language-selector {
+    width: 70px;
+    cursor: pointer;
+  }
+}
+
+.rgdq-input-container{
+  margin-bottom: 2rem;
+}
+
+input.rgdq-input[type=text] {
+  width: 100%;
+  height: 50px;
+  padding-left: 15px;
+  font-size: 20px;
+  border: 1px solid $green;
+}
+
+.rgdq-textarea {
+  width: 100%;
+  height: 200px;
+  padding-left: 15px;
+  font-size: 20px;
+  border: 1px solid $green;
+}
+
+.rgdq-contain-actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rgdq-submit{
+  cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $green;
+  width: 300px;
+  height: 80px;
+  // font-family: Neutra2Text-Book;
+  font-size: 50px;
+  color: $green;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: $white;
+  text-decoration: none;
+  transition:0.3s all;
+
+  &:hover, &:focus{
+    background: $green;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+
+/* Custom radio input */
+.rgdq-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.rgdq-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.rgdq-checkmark {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $greyLight;
+  border:1px solid $grey;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.rgdq-container:hover input ~ .rgdq-checkmark {
+  background-color: $grey;
+}
+
+/* When the radio button is checked, add a $green background */
+.rgdq-container input:checked ~ .rgdq-checkmark {
+  background-color: $green;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.rgdq-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.rgdq-container input:checked ~ .rgdq-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.rgdq-container .rgdq-checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: $white;
+}
+
+.rgdq-label{
+  display: block;
+}
+
+.rgdq-thank{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
+
+// Responsive part
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}

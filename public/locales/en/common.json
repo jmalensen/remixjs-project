@@ -1,0 +1,18 @@
+{
+	"loading": "Loading",
+    "title": "Please enter and check your informations",
+    "customer_number": "Customer number *",
+    "fullname": "Fullname *",
+    "have_you_set_budget": "Have you set a budget for today?",
+    "yes": "Yes",
+    "no": "No",
+    "for_what_purpose_you_visit_casino": "For what purpose do you visit the casino?",
+    "do_you_know_our_tips": "Do you know about our four good tips?",
+    "continue": "Continue",
+
+    "invalid_customer_number": "Invalid customer number",
+    "invalid_fullname": "The name should be at least 12 characters",
+
+    "thank_you": "Thank you",
+    "back_home": "Back home"
+}
